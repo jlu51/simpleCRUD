@@ -1,0 +1,25 @@
+.App {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.addTask {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   background-color: aqua;
+}
+
+.addTask input {
+   width: 320px;
+}
+
+.addTask button {
+   margin-top: 15px;
+   width: 300px;
+}
+

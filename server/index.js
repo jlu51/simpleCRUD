@@ -30,6 +30,17 @@ app.get('/', (req, res) => {
    res.send("Hello World!")
 });
 
+app.get('/tasks', (req, res) => {
+   let sql = 'SELECT * from tasks';
+   db.query(sql, (err, result) => {
+      if (err) {
+         throw err
+      } else {
+         res.send(result)
+      }
+   } )
+})
+
 app.post('/addtask', (req, res) => {
    // let task = {name: 'postname'};
    console.log(req);
